@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    width: 100%;
+}
+
+button {
+    height: 45px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(238, 29, 82, 0.9);
+}
+
+header {
+    width: 85%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    height: 30px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color: silver;
+}
+
+.input {
+    margin: 10px;
+}
+
+.input>h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.input>label {
+    font-weight: 600;
+}
+
+label, input {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit {
+    margin: 40px 0;
+}
+#t1 {
+    border-color: rgb(105, 201, 208);
+}
+
+#title {
+    display: inline-block;
+}
+
+form {
+    max-width: 400px;
+    width: 85%;
+    border-radius: 16px;
+    background-color: rgba(238, 29, 82, 0.9); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgba(238, 29, 82, 0.9), rgb(105, 201, 208));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    padding-bottom: 30px;
+    color: white;
+}
+
+#logo {
+    font-family: 'Boogaloo', cursive;
+    font-size: 32px;
+}

@@ -1,17 +1,53 @@
 <!doctype HTML> 
 
-<HTML> 
-  
+<HTML>
+
 <HEAD>
-  <meta charset="utf-8" /> 
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="https://ecs-162-spring-2022.profamenta.repl.co/reset.css" />
+  <link rel="stylesheet" type="text/css" href="tiktokpets.css" />
+  <script defer src="tiktokpets.js"></script>
 </HEAD>
+<body>
+  <div class="container">
+    <header>
+      <div id="title">
+        <h1 id="logo">TikTok Pets</h1>
+      </div>
+      <div class="button">
+        <button type="button">My Videos</button>
+      </div>
+    </header>
 
-<body> 
+    <main>
+      <div class="container" id="form_container">
+        <form action="" id="form">
+          <div class="input">
+            <h1>Submit a video</h1>
+          </div>
+          <div class="input">
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" class="text" id="t1"><br>
+          </div>
+          <div class="input">
+            <label for="url">Tiktok URL</label><br>
+            <input type="text" name="url" class="text"><br>
+          </div>
+          <div class="input">
+            <label for="nickname">Video nickname</label><br>
+            <input type="text" name="nickname" class="text"><br>
+          </div>
+        </form>
 
-This file should contain HTML. 
+        <div class="button" id="submit">
+          <button type="submit" onsubmit="continueFunction()">Continue</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
 
 </body>
 
-</html> 
+</html>
