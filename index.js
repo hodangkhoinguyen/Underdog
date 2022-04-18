@@ -27,6 +27,12 @@ app.get("/", (request, response) => {
 app.use(function(req, res){ res.status(404); res.type('txt'); res.send('404 - File '+req.url+' not found'); });
 // end of pipeline specification
 
+app.post('/newlog', function(req, res, next) {
+  console.log("Server recieved a post request at", req.url);
+  let text = req.body;
+  console.log("It contained this string:",text);
+  res.send("I got your POST request");
+});
 // Now listen for HTTP requests
 // it's an event listener on the server!
 const listener = app.listen(3000, function () {
