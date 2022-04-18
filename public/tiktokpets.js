@@ -18,17 +18,17 @@ async function sendPostRequest(url, data) {
 }
 
 function continueFunction() {
-  const username = document.getElementsByName("username")[0];
-  const url = document.getElementsByName("url")[0];
-  const nickname = document.getElementsByName("nickname")[0];
+  const username = document.getElementsByName("username")[0].value;
+  const url = document.getElementsByName("url")[0].value;
+  const nickname = document.getElementsByName("nickname")[0].value;
 
   let info = username + " " + url + " " + nickname;
 
   sendPostRequest('/videoData', info)
-  // since this page appears at 
-  // https://POST-Example.profamenta.repl.co
-  // the POST request goes to 
-  // https://POST-Example.profamenta.repl.co/newlog
+// since this page appears at 
+// https://POST-Example.profamenta.repl.co
+// the POST request goes to 
+// https://POST-Example.profamenta.repl.co/newlog
   .then(function (data) {
     console.log("got back the following string");
     console.log(data); 
