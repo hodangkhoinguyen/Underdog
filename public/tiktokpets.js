@@ -24,7 +24,7 @@ function continueFunction() {
 
   let info = username + " " + url + " " + nickname;
 
-  sendPostRequest('/videoData.html', info)
+  sendPostRequest('/videoData', info)
   // since this page appears at 
   // https://POST-Example.profamenta.repl.co
   // the POST request goes to 
