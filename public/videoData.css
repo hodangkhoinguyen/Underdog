@@ -6,7 +6,7 @@
 }
 
 main {
-    width: 100%;
+  width: 100%;
   margin-top: 180px;
 }
 
@@ -29,7 +29,7 @@ header {
 }
 
 h2{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Boogaloo', cursive;
   font-weight: 600;
   font-size: 20px;
 }
