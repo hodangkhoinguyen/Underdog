@@ -32,6 +32,8 @@ function continueFunction() {
   .then(function (data) {
     console.log("got back the following string");
     console.log(data); 
+    sessionStorage.setItem("nick",nickname);
+    window.location = "/videoData.html";
   })
   .catch(function (error) {
      console.error('Error:', error);
