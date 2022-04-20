@@ -37,8 +37,18 @@ app.post('/videoData', function(req, res, next) {
   console.log("It contained this string:",text);
   res.send("I got your POST request");
 });
+
+app.post('/acknowledgement', function(req, res, next) {
+  console.log("Server recieved a post request at", req.url);
+  let text = req.body;
+  console.log("It contained this string:",text);
+  res.send("I got your POST request");
+});
+
 // Need to add response if page not found!
 app.use(function(req, res){ res.status(404); res.type('txt'); res.send('404 - File '+req.url+' not found'); });
+
+
 // end of pipeline specification
 
 // Now listen for HTTP requests
