@@ -94,16 +94,19 @@ div.container {
 }
 
 #continue_button {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 /*for tablet*/
-@media (min-width: 480px) {
-  header, main {   
-    margin-top: 40px;
-    max-width: 600px;
+@media (min-width: 480px) {  
+  body {
+    margin: 0 40px;
+    margin-top: 80px;
   }
 
+  header, main {   
+    max-width: 600px;
+  }
   button {
     font-size: 20px;
     height: 60px;
@@ -121,8 +124,7 @@ div.container {
   }
 
   div.container {
-    margin: 75px;
-    padding: 60px 0;
+    margin: 60px;
   }
 
   #form_header > h2 {
@@ -136,18 +138,8 @@ div.container {
 
 /*for desktop*/
 @media (min-width: 900px) {  
-  body {
-    margin: 0 50px;
-    margin-top: 80px;
-  }
-
   header {
     justify-content: center;
-  }
-
-  header, main {   
-    margin-top: 60px;
-    max-width: 800px;
   }
 
   button {
@@ -158,10 +150,6 @@ div.container {
   input {
     height: 55px;
     padding-left: 25px;
-  }
-
-  div.input {
-    margin: 35px;
   }
 
   #videos_button {
